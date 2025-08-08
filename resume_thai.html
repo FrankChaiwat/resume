@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัวเชิงโต้ตอบ - ไชยวัฒน์ ปานทิพย์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            margin: auto;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Chosen Palette: Cool Slate & Sage -->
+    <!-- Application Structure Plan: โครงสร้างแบบสองคอลัมน์ที่ทันสมัย คอลัมน์ซ้ายจะแสดงข้อมูลเชิงรายละเอียดทั้งหมดในหน้าเดียว (สรุป, การศึกษา, การฝึกอบรม, ผลงาน) เพื่อให้ผู้ใช้เลื่อนดูได้ง่าย คอลัมน์ขวาจะแสดงข้อมูลสรุปที่สำคัญ (การติดต่อ, ทักษะ) พร้อมแผนภูมิที่ดูรวดเร็ว โครงสร้างนี้ช่วยให้เนื้อหามีความต่อเนื่องและเข้าใจง่ายขึ้นโดยไม่ต้องสลับแท็บ -->
+    <!-- Visualization & Content Choices: Report Info: รายการทักษะ -> Goal: สรุปความเชี่ยวชาญทางเทคนิคอย่างรวดเร็วด้วยภาพ -> Viz/Presentation Method: แผนภูมิเรดาร์ (Radar Chart) -> Interaction: เมื่อวางเมาส์จะแสดงรายละเอียดของทักษะ -> Justification: แผนภูมิเรดาร์ช่วยให้เห็นภาพรวมของความสามารถได้ดีกว่ารายการธรรมดา ทำให้โปรไฟล์น่าจดจำยิ่งขึ้น -> Library/Method: Chart.js (Canvas) ส่วนอื่นๆ (สรุป, การศึกษา, ฯลฯ) จะถูกนำเสนอในรูปแบบข้อความที่สะอาดตาพร้อมไอคอน เพื่อให้อ่านง่ายและอยู่ในหน้าเดียวกันทั้งหมด -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 md:p-8">
+        
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-800">ไชยวัฒน์ ปานทิพย์</h1>
+            <p class="text-xl md:text-2xl text-slate-600 mt-2">IT Support</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm space-y-8">
+                
+                <section class="prose prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold text-teal-800 border-b border-slate-200 pb-2 mb-4">สรุป</h2>
+                    <p>ผู้เชี่ยวชาญด้าน IT Support ที่มีความมุ่งมั่นและใส่ใจในรายละเอียด ด้วยพื้นฐานที่แข็งแกร่งด้านฮาร์ดแวร์ ซอฟต์แวร์ และการจัดการเครือข่ายเบื้องต้น ในฐานะผู้สำเร็จการศึกษาใหม่จากประกาศนียบัตรวิชาชีพชั้นสูง สาขาคอมพิวเตอร์ฮาร์ดแวร์ ผมมีประวัติความสำเร็จที่พิสูจน์ได้จากการได้รับรางวัลระดับชาติในการแข่งขัน Cloud Computing ผมมุ่งมั่นที่จะนำทักษะทางเทคนิคและความหลงใหลในเทคโนโลยีมาใช้เพื่อมีส่วนร่วมกับทีมที่มีพลวัตและสร้างสรรค์</p>
+                </section>
+
+                <section class="prose prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold text-teal-800 border-b border-slate-200 pb-2 mb-4">การศึกษา</h2>
+                    <h3 class="text-lg font-semibold text-teal-700">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาคอมพิวเตอร์ฮาร์ดแวร์</h3>
+                    <p class="font-medium">วิทยาลัยเทคนิคนครสวรรค์</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><span class="font-semibold">ปีที่สำเร็จการศึกษา:</span> 2023</li>
+                        <li><span class="font-semibold">เกรดเฉลี่ย:</span> 3.44</li>
+                    </ul>
+                </section>
+
+                <section class="prose prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold text-teal-800 border-b border-slate-200 pb-2 mb-4">การฝึกอบรม</h2>
+                    <h3 class="text-lg font-semibold text-teal-700">วิทยาลัยเทคนิคนครสวรรค์ (2023)</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>ผ่านการฝึกอบรมที่ครอบคลุมในด้านการบำรุงรักษาและซ่อมแซมคอมพิวเตอร์พื้นฐาน</li>
+                        <li>มีความเชี่ยวชาญในการติดตั้งและแก้ไขปัญหาระบบปฏิบัติการ Windows 7, 10, และ 11</li>
+                        <li>มีความรู้พื้นฐานด้านแนวคิดการเขียนโปรแกรม</li>
+                    </ul>
+                </section>
+
+                <section class="prose prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold text-teal-800 border-b border-slate-200 pb-2 mb-4">ผลงาน</h2>
+                    <h3 class="text-lg font-semibold text-teal-700">การแข่งขัน Cloud Computing ระดับประกาศนียบัตรวิชาชีพชั้นสูง</h3>
+                     <ul class="list-none space-y-2">
+                        <li class="flex items-center"><span class="text-amber-500 mr-2">🏆</span> <strong>ระดับชาติ:</strong> ได้รับรางวัลสำหรับผลงานที่โดดเด่นในรอบชิงชนะเลิศระดับชาติ</li>
+                        <li class="flex items-center"><span class="text-amber-500 mr-2">🏅</span> <strong>ระดับภาค:</strong> ได้รับรางวัล</li>
+                        <li class="flex items-center"><span class="text-amber-500 mr-2">🏅</span> <strong>ระดับจังหวัด:</strong> ได้รับรางวัล</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold border-b border-slate-200 pb-3 mb-4 text-teal-800">การติดต่อ</h3>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-center"><span class="w-6 mr-2">📞</span> <a href="tel:096-809-2471" class="hover:text-teal-600">096-809-2471</a></li>
+                        <li class="flex items-center"><span class="w-6 mr-2">✉️</span> <a href="mailto:frank0941908208@gmail.com" class="hover:text-teal-600 break-all">frank0941908208@gmail.com</a></li>
+                        <li class="flex items-start"><span class="w-6 mr-2 pt-1">📍</span> <span>1739/153 หมู่ 6 ต.ท้ายบ้านใหม่ อ.เมืองสมุทรปราการ จ.สมุทรปราการ 10280</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold border-b border-slate-200 pb-3 mb-4 text-teal-800">ทักษะทางเทคนิค</h3>
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold border-b border-slate-200 pb-3 mb-4 text-teal-800">ความสนใจ</h3>
+                     <ul class="flex flex-wrap gap-x-4 gap-y-2 text-slate-700">
+                        <li class="flex items-center">🛰️<span class="ml-2">การสำรวจเทคโนโลยีใหม่ๆ</span></li>
+                        <li class="flex items-center">⚽<span class="ml-2">กีฬา</span></li>
+                        <li class="flex items-center">✈️<span class="ml-2">ท่องเที่ยว</span></li>
+                        <li class="flex items-center">🎵<span class="ml-2">ฟังเพลง</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+            const skillsChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['ฮาร์ดแวร์ & OS', 'เครือข่าย', 'การพัฒนาเว็บ', 'การเขียนโปรแกรม', 'ฐานข้อมูล', 'เครื่องมือ AI'],
+                    datasets: [{
+                        label: 'ระดับความเชี่ยวชาญ',
+                        data: [4, 3, 3, 3.5, 3, 4],
+                        backgroundColor: 'rgba(15, 118, 110, 0.2)',
+                        borderColor: 'rgba(13, 78, 73, 1)',
+                        pointBackgroundColor: 'rgba(13, 78, 73, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(13, 78, 73, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 12,
+                                    weight: 500,
+                                },
+                                color: '#475569'
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                max: 5,
+                                stepSize: 1,
+                                backdropColor: 'rgba(255, 255, 255, 0.75)',
+                                color: '#64748b'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.r !== null) {
+                                        label += context.parsed.r + ' / 5';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
